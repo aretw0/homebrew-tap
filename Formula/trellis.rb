@@ -11,7 +11,7 @@ class Trellis < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/aretw0/trellis/releases/download/v0.7.4/trellis_Darwin_x86_64.tar.gz"
-      sha256 "fbe46b71b396f8001280f2dded8ff6a5d24eb49208a68ec2c49dcc337f5cf799"
+      sha256 "e49dc0241e6cad1ec824c64fc7e10d72e7956abf9b9ba9e4e54a42501e2591d5"
 
       def install
         bin.install "trellis"
@@ -19,7 +19,7 @@ class Trellis < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/aretw0/trellis/releases/download/v0.7.4/trellis_Darwin_arm64.tar.gz"
-      sha256 "a72fd8e93497719398ff83327134f4bf4a8e9d38bf24987bf0e80921504ec1b9"
+      sha256 "0a74498a472001be23a0f015173e36135441ab01aabadcf6790ce1ecc547ac47"
 
       def install
         bin.install "trellis"
@@ -30,14 +30,14 @@ class Trellis < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/aretw0/trellis/releases/download/v0.7.4/trellis_Linux_x86_64.tar.gz"
-      sha256 "0b33bae8c668485e31b3d1e572757ef04ddb55cac1a80ac6c3cb6447702c0cb5"
+      sha256 "4442147654c41849a355cea2a2957c37704e23576a20306ecd4ef78be246bb87"
       def install
         bin.install "trellis"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/aretw0/trellis/releases/download/v0.7.4/trellis_Linux_arm64.tar.gz"
-      sha256 "e7c794f5cba967280f61a688fe8ba7fc19812f786556cb4622c3d4fb88941c06"
+      sha256 "fc08b06ee5924eee974936aafbb66bd0210a4fb083ae4ee6690404e233100e03"
       def install
         bin.install "trellis"
       end
