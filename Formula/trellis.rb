@@ -5,21 +5,21 @@
 class Trellis < Formula
   desc "Deterministic state machine engine for CLIs and automation."
   homepage "https://github.com/aretw0/trellis"
-  version "0.7.5"
+  version "0.7.6"
   license "AGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aretw0/trellis/releases/download/v0.7.5/trellis_Darwin_x86_64.tar.gz"
-      sha256 "1f6f90331bc65f7d43243cb71690a20a2c86b6f394f1a69c44be294c872add6b"
+      url "https://github.com/aretw0/trellis/releases/download/v0.7.6/trellis_Darwin_x86_64.tar.gz"
+      sha256 "19fbb936560633428bc271a990de4c59e64b2581b7f865a6d9cc2bb6ae6d75a4"
 
       def install
         bin.install "trellis"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aretw0/trellis/releases/download/v0.7.5/trellis_Darwin_arm64.tar.gz"
-      sha256 "c74ca35f9c0c06aebdbec27ec2e9e754e0709c3831439cfce9a148002e47c116"
+      url "https://github.com/aretw0/trellis/releases/download/v0.7.6/trellis_Darwin_arm64.tar.gz"
+      sha256 "28417a89b7b321116b945bc457a34d52f19cc252d0f09d1153b45547e1870362"
 
       def install
         bin.install "trellis"
@@ -29,15 +29,15 @@ class Trellis < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aretw0/trellis/releases/download/v0.7.5/trellis_Linux_x86_64.tar.gz"
-      sha256 "902f556347de9b3a2f1215dabfb4fb5820e2431bd03b2627206f094836182cad"
+      url "https://github.com/aretw0/trellis/releases/download/v0.7.6/trellis_Linux_x86_64.tar.gz"
+      sha256 "d7c6515a25e427b2b34ae42f43ff4fa386adf748dc632eebb434d723e1ed8a48"
       def install
         bin.install "trellis"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aretw0/trellis/releases/download/v0.7.5/trellis_Linux_arm64.tar.gz"
-      sha256 "cf7d859b3580d30c138bcdbf3b65e4b1d74a101034532044c7eaf8d860014668"
+      url "https://github.com/aretw0/trellis/releases/download/v0.7.6/trellis_Linux_arm64.tar.gz"
+      sha256 "abdf8f07c885ceebea52293c3bacff5864e13d0b66f03b61bb287426ef8947e8"
       def install
         bin.install "trellis"
       end
