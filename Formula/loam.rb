@@ -5,21 +5,21 @@
 class Loam < Formula
   desc "An Embedded Reactive & Transactional Engine for Content & Metadata."
   homepage "https://github.com/aretw0/loam"
-  version "0.10.8"
+  version "0.10.9"
   license "AGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aretw0/loam/releases/download/v0.10.8/loam_Darwin_x86_64.tar.gz"
-      sha256 "d35383ceabf6826478f4c116fe2eab1daddd8fccc058877fa22c020b5c03cea3"
+      url "https://github.com/aretw0/loam/releases/download/v0.10.9/loam_Darwin_x86_64.tar.gz"
+      sha256 "6f51d7f1ce254470b3ab57878f5cf2177a73ac2fa522356eb6df923754133fe0"
 
       def install
         bin.install "loam"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aretw0/loam/releases/download/v0.10.8/loam_Darwin_arm64.tar.gz"
-      sha256 "40b2a1385bc49b870ef02c9b4e927a25c7f05673677ef33ee96a4120affac002"
+      url "https://github.com/aretw0/loam/releases/download/v0.10.9/loam_Darwin_arm64.tar.gz"
+      sha256 "67d52940be1fd34c1b026a319236fca9c5661d225ebe8b93edb5e645dc9e10f2"
 
       def install
         bin.install "loam"
@@ -29,15 +29,15 @@ class Loam < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aretw0/loam/releases/download/v0.10.8/loam_Linux_x86_64.tar.gz"
-      sha256 "9d2df54a3110e5371b51dae467d49ed7a6380364dcc436f08fc049f63a50aeda"
+      url "https://github.com/aretw0/loam/releases/download/v0.10.9/loam_Linux_x86_64.tar.gz"
+      sha256 "3e26b89633b5c54d2903a9a54a5ee59666fb191e413d8aa942e1bfbd952f55cd"
       def install
         bin.install "loam"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aretw0/loam/releases/download/v0.10.8/loam_Linux_arm64.tar.gz"
-      sha256 "c80faf54e693268ccd64508869c883c7444e073a36290257088e277f399b627a"
+      url "https://github.com/aretw0/loam/releases/download/v0.10.9/loam_Linux_arm64.tar.gz"
+      sha256 "4f5e54b85471842fe1c5d8d737a9f04b678f216c4a584d54034ec4e0a1cb2cc7"
       def install
         bin.install "loam"
       end
