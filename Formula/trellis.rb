@@ -5,21 +5,21 @@
 class Trellis < Formula
   desc "Deterministic state machine engine for CLIs and automation."
   homepage "https://github.com/aretw0/trellis"
-  version "0.7.16"
+  version "0.7.17"
   license "AGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aretw0/trellis/releases/download/v0.7.16/trellis_Darwin_x86_64.tar.gz"
-      sha256 "b741e21d1644611f3d0773dfa8f26c577a587abd15de8ea5909a8a997c9a1da7"
+      url "https://github.com/aretw0/trellis/releases/download/v0.7.17/trellis_Darwin_x86_64.tar.gz"
+      sha256 "4ad42f72ec46f43fc1b60d7f9446db4554d19fb6e5d1a195d8070ba60894794c"
 
       define_method(:install) do
         bin.install "trellis"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aretw0/trellis/releases/download/v0.7.16/trellis_Darwin_arm64.tar.gz"
-      sha256 "95a5d01954ebff022e514830eb1e5bf1d6cc359c474ff53fbb8749028b8da62e"
+      url "https://github.com/aretw0/trellis/releases/download/v0.7.17/trellis_Darwin_arm64.tar.gz"
+      sha256 "babaf9030057fd10d63badc3177fc9bd9fecffcb98e71c6840cc0187d1f5cfd1"
 
       define_method(:install) do
         bin.install "trellis"
@@ -29,15 +29,15 @@ class Trellis < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aretw0/trellis/releases/download/v0.7.16/trellis_Linux_x86_64.tar.gz"
-      sha256 "2dfe947889fa1f9287b661d65d335fb070ddbce7502d5be0f57b3e19e45251ff"
+      url "https://github.com/aretw0/trellis/releases/download/v0.7.17/trellis_Linux_x86_64.tar.gz"
+      sha256 "833d7858a4fc1d646417c652f3287ae8024426a612f5458197201cb56c25f23b"
       define_method(:install) do
         bin.install "trellis"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aretw0/trellis/releases/download/v0.7.16/trellis_Linux_arm64.tar.gz"
-      sha256 "ab305a8621ab6d964aa23e77532be2c29bfc10ac4762c48709f8848a710a511b"
+      url "https://github.com/aretw0/trellis/releases/download/v0.7.17/trellis_Linux_arm64.tar.gz"
+      sha256 "d7a9df4f3030d61d63dc8e7b5b7f5b151fa22c645ebd9c5f6915de5f9e916c89"
       define_method(:install) do
         bin.install "trellis"
       end
